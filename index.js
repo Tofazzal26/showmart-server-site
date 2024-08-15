@@ -5,6 +5,7 @@ const port = process.env.PORT || 4000;
 const cors = require("cors");
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const jwt = require("jsonwebtoken");
+const cookieParser = require("cookie-parser");
 
 // middleware
 
@@ -17,7 +18,7 @@ app.use(
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Financity");
+  res.send("ShowMart");
 });
 
 app.listen(port, () => {
@@ -35,7 +36,7 @@ const client = new MongoClient(uri, {
   },
 });
 
-const userRoleCollection = client.db("financity").collection("Users");
+const userCollection = client.db("ShowMart").collection("Users");
 
 async function run() {
   try {
