@@ -6,6 +6,72 @@
 
 ## Live Link --> [ShowMart](https://showmart-dd30a.web.app)
 
+
+
+## Run Locally
+
+#### Clone the project
+
+```bash
+  git clone https://repository-link
+```
+
+#### Go to the project directory
+
+```bash
+  cd my-project
+```
+
+#### Install dependencies
+
+```bash
+  npm install
+```
+
+#### Start the server
+
+```bash
+  npm i nodemon
+```
+
+
+```bash
+  npm i jsonwebtoken
+```
+
+```bash
+  npm i mongodb
+```
+
+```bash
+  npm i express
+```
+
+```bash
+  npm i cors
+```
+
+#### Run the app
+
+```bash
+  nodemon index.js
+```
+
+
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
+
+
+
+
+
 ## Characteristics:
 
 
